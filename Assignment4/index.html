@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <form id="user-form">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+        </div>
+        <div>
+            <label for="admission">Admission No:</label>
+            <input type="text" id="admission" name="admission" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div>
+            <label for="blood">Blood Group:</label>
+            <input type="text" id="blood" name="blood" required>
+        </div>
+        <div>
+            <label for="hostel">Hostel:</label>
+            <input type="text" id="hostel" name="hostel" required>
+        </div>
+        <div>
+            <label for="validity">Valid Till:</label>
+            <input type="date" id="validity" name="validity" required>
+        </div>
+        <div>
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+        </div>
+        <button type="button" onclick="generateIDCard()">Generate ID Card</button>
+    </form>
+
+    <div id="id-card">
+        <img src="https://imgs.search.brave.com/5isB7_xDQkNqXzwLXE9tWj52Tg149lN7UzjbAIUcLdU/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dW5pdmVyc2l0eWth/cnQuY29tLy9Db250/ZW50L3VwbG9hZC9h/ZG1pbi93aXRrbWgy/NC5yajMuanBn"
+            alt="ABES EC Logo">
+        <h2>ABES Engineering College</h2>
+        <img class="photo" id="card-photo" alt="User Photo">
+        <p><strong>Name:</strong> <span id="card-name"></span></p>
+        <p><strong>Department:</strong> <span id="card-department"></span></p>
+        <p><strong>Admission No:</strong> <span id="card-admission"></span></p>
+        <p><strong>Date of Birth:</strong> <span id="card-dob"></span></p>
+        <p><strong>Blood Group:</strong> <span id="card-blood"></span></p>
+        <p><strong>Hostel:</strong> <span id="card-hostel"></span></p>
+        <p><strong>Valid Till:</strong> <span id="card-validity"></span></p>
+    </div>
+</body>
+
+</html>

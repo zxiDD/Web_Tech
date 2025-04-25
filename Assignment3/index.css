@@ -1,0 +1,12 @@
+.container {
+    height: 100vh;
+    margin: 10px;
+}
+
+img {
+    filter: grayscale(100%);
+}
+
+img:hover {
+    filter: grayscale(0%);
+}
